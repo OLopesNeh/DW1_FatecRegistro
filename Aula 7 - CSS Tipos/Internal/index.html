@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Internal</title>
+    <!-- Aqui vai o código CSS interno -->
+    <style>
+      p {
+        color: blue;
+        font-size: 28px;
+      }
+      p.destaque {
+        color: black;
+        font-weight: bold;
+        background-color: blueviolet;
+        border-left: 4px solid black;
+        padding: 10px;
+      }
+      #tituloSecao {
+        color: red;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Demonstração de CSS Interno</h1>
+    <p>
+      Este paragrafo é estilizado
+      <br />
+      através do CSS interno, definido no head.
+    </p>
+    <p class="destaque">
+      Este paragrafo possui uma classe (.) "Destaque" e recebe estilos
+      especificos.
+    </p>
+    <h1>
+      Este paragrafo é estilizado
+      <br />
+      através do CSS interno, definido no head.
+    </h1>
+    <section id="principal">
+      <h2 id="tituloSecao">Seção principal</h2>
+      <p
+        style="
+          color: black;
+          font-weight: bold;
+          background-color: blueviolet;
+          border-left: 4px solid black;
+          padding: 10px;
+        "
+      >
+        Este paragrafo possui uma classe (#) "Destaque" e recebe estilos
+        especificos.
+      </p>
+    </section>
+  </body>
+</html>
